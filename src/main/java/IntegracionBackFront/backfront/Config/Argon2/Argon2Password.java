@@ -19,6 +19,6 @@ public class Argon2Password {
     }
 
     public boolean VerifyPassword(String hashDB, String contrasena) {
-
+        return argon2.verify(hashDB, contrasena);
     }
 }
